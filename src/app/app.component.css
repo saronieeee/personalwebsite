@@ -5,12 +5,6 @@
     box-sizing: border-box;
 }
 
-body {
-    background: #080808;
-    color: #fff;
-    margin:0px;
-}
-
 .container {
     padding: 5px 10%;
 }
