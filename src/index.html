@@ -40,7 +40,7 @@
 </script>
 
 <script>
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbwG_ntP3Vftl7GCMA0z6yUWquEqUA78pHybPBw1ZXErevwSEjNiJsO9YQ5cVqko57lsrw/exec' // add your own app script link here
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbwG_ntP3Vftl7GCMA0z6yUWquEqUA78pHybPBw1ZXErevwSEjNiJsO9YQ5cVqko57lsrw/exec'
   const form = document.forms['submit-to-google-sheet']
   const msg = document.getElementById("msg")
 
@@ -162,7 +162,7 @@
 </script>
 
 <script>
-  (function (w) {
+  (function (w, width, height) {
     var canvas, ctx;
 
     /* 
@@ -182,8 +182,8 @@
         These are the variable definitions for the values that will be used 
         throughout the rest of the script.
         */
-    var canvas_width = 1500; //Needs to be a multiple of the resolution value below.
-    var canvas_height = 630; //This too.
+    var canvas_width = Max(App.Width, App.DesignWidth); //Needs to be a multiple of the resolution value below.
+    var canvas_height = Max(App.Height, App.DesigHeight); //This too.
 
     var resolution = 10; //Width and height of each cell in the grid.
 
